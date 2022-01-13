@@ -1,0 +1,109 @@
+.settings {
+  display: flex;
+}
+
+.settings-wrapper {
+  flex: 9;
+  padding: 20px;
+}
+
+.settings-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.settings-update-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.settings-delete-title {
+  color: crimson;
+  font-weight: 550;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-profilepic {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.settings-profilepic img {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.settings-form > label {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.settings-form > input {
+  color: #444444;
+  margin: 10px 0;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  background-color: var(--bg-secondary);
+  padding: 5px;
+}
+
+.settings-submit {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.settings-submit:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .settings {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .settings-update-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 356px) {
+  .settings-update-title {
+    font-size: 20px;
+    margin-left: -5px;
+  }
+
+  .settings-delete-title {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+}

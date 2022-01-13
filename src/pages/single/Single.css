@@ -1,0 +1,9 @@
+.single {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .single {
+    flex-direction: column;
+  }
+}
